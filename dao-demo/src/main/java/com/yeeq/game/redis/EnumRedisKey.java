@@ -13,10 +13,6 @@ public enum EnumRedisKey {
      */
     USER_STATUS,
     /**
-     * userOnline 对局信息
-     */
-    USER_IN_PLAY,
-    /**
      * userOnline 匹配信息
      */
     USER_MATCH_INFO,

@@ -2,7 +2,7 @@ server:
   port: 5003
 spring:
   application:
-    name: garbage-sorting-game-pk
+    name: websocket-demo
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/garbage_sorting_game?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useAffectedRows=true

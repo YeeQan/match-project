@@ -25,10 +25,10 @@ public class MatchCacheUtil {
     private static final Map<String, ChatWebsocket> CLIENTS = new HashMap<>();
 
     /**
-     * key 是标识存储用户在线状态的 EnumRedisKey，value 为 map 类型，其中用户在线状态为 key，用户 userId 为 value
+     * key 是标识存储用户在线状态的 EnumRedisKey，value 为 map 类型，其中用户 userId 为 key，用户在线状态 为 value
      */
     @Resource
-    private RedisTemplate<String, Map<String, Set<String>>> redisTemplate;
+    private RedisTemplate<String, Map<String, String>> redisTemplate;
 
     /**
      * 添加客户端
