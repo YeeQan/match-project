@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>websocket测试</title>	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html" charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="chatroom.css">
+  </head>
+  
+  <body>
+
+	<div class="chat-window">
+		<span>连接：</span>
+		<input name="userIdInput" id="userIdInput"/>
+		<input type="button" name="connect" id="connect" value="连接" onclick="connect()"/>
+		<input type="button" name="sendUserId" id="sendUserId" value="加入用户" onclick="addUser()"/>
+	</div>
+		
+	<div class="chat-window">
+		<span>随机匹配</span>
+		<input type="button" name="match" id="match" value="随机匹配" onclick="matchUser()"/>
+	</div>
+
+	<div class="chat-window">
+		<span>取消匹配</span>
+		<input type="button" name="match" id="match" value="取消匹配" onclick="cancelMatch()"/>
+	</div>
+
+	<div class="chat-window">
+		<span>实时更新分数</span>
+		<input name="newScoreInput" id="newScoreInput" placeholder="新分数"/>
+		<input type="button" name="play" id="play" value="实时更新分数" onclick="userInPlay()"/>
+	</div>
+
+	<div class="chat-window">
+		<span>游戏结束</span>
+		<input type="button" name="over" id="over" value="游戏结束" onclick="gameover()"/>
+	</div>
+	
+	<script type="text/javascript" src="jquery.min.js" charset="utf-8"></script>	
+	<script type="text/javascript" src="chatroom.js" charset="utf-8"></script>
+	
+  </body>
+</html>
